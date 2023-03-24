@@ -1,0 +1,9 @@
+.custom-btn {
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.input-wrap {
+  margin-bottom: 10px;
+}
+
+.input-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-input {
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid #b8b8b8;
+  transition: 0.3s all;
+}
+
+.custom-input:hover,
+.custom-input:focus {
+  border-color: #333;
+}
+
+.custom-btn {
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}

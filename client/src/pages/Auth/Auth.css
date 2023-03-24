@@ -1,0 +1,11 @@
+.auth-wrap {
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.auth-wrap form {
+  margin: auto;
+}

@@ -8,6 +8,9 @@ import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
+import authRoutes from "./routes/auth.js";
+import { register } from "./controller/auth.js";
+import { verifyToken } from "./middleware/auth.js";
 /* Config */
 dotenv.config();
 const app = express();
@@ -30,8 +33,11 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage });
+// Routes with files
+//setting up the multer middleware to handle the file upload and storing it in the public folder
+app.post("/auth/register", upload.single("picture"), register);
 /* Routes */
-
+app.use("/auth", authRoutes);
 /* DB Config */
 const PORT = process.env.PORT || 6001;
 mongoose

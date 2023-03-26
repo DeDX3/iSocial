@@ -2,8 +2,8 @@
 
 Routes:
 
-{{url}}/login ---- after sucessful login, gives a token
-{{url}}/register ---
+{{url}}/auth/login ---- after sucessful login, gives a token
+{{url}}/auth/register ---
 
 Schema:
 
